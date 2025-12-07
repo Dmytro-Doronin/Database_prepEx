@@ -1,0 +1,160 @@
+{
+  "users": [
+    {
+      "_id": 1,
+      "name": "Test User",
+      "email": "test.user@example.com"
+    }
+  ],
+  "categories": [
+    { "_id": 1, "name": "Cake" },
+    { "_id": 2, "name": "No-Bake" },
+    { "_id": 3, "name": "Vegetarian" },
+    { "_id": 4, "name": "Vegan" },
+    { "_id": 5, "name": "Gluten-Free" },
+    { "_id": 6, "name": "Japanese" }
+  ],
+  "ingredients": [
+    { "_id": 1, "name": "Condensed milk" },
+    { "_id": 2, "name": "Cream Cheese" },
+    { "_id": 3, "name": "Lemon Juice" },
+    { "_id": 4, "name": "Pie Crust" },
+    { "_id": 5, "name": "Cherry Jam" },
+    { "_id": 6, "name": "Brussels Sprouts" },
+    { "_id": 7, "name": "Sesame seeds" },
+    { "_id": 8, "name": "Pepper" },
+    { "_id": 9, "name": "Salt" },
+    { "_id": 10, "name": "Olive oil" },
+    { "_id": 11, "name": "Macaroni" },
+    { "_id": 12, "name": "Butter" },
+    { "_id": 13, "name": "Flour" },
+    { "_id": 14, "name": "Milk" },
+    { "_id": 15, "name": "Shredded Cheddar cheese" },
+    { "_id": 16, "name": "Eggs" },
+    { "_id": 17, "name": "Soy sauce" },
+    { "_id": 18, "name": "Sugar" },
+    { "_id": 19, "name": "Potato" }
+  ],
+  "recipes": [
+    {
+      "_id": 1,
+      "name": "No-Bake Cheesecake",
+      "description": "Cheesecake without baking",
+      "creatorId": 1,
+      "prepTimeMinutes": 20,
+      "cookTimeMinutes": 0,
+      "categories": ["Cake", "No-Bake", "Vegetarian"],
+      "ingredients": [
+        { "ingredientId": 1, "name": "Condensed milk", "quantity": null, "unit": null },
+        { "ingredientId": 2, "name": "Cream Cheese", "quantity": null, "unit": null },
+        { "ingredientId": 3, "name": "Lemon Juice", "quantity": null, "unit": null },
+        { "ingredientId": 4, "name": "Pie Crust", "quantity": null, "unit": null },
+        { "ingredientId": 5, "name": "Cherry Jam", "quantity": null, "unit": null }
+      ],
+      "steps": [
+        { "order": 1, "description": "Beat cream cheese until smooth." },
+        { "order": 2, "description": "Add condensed milk and mix." },
+        { "order": 3, "description": "Add lemon juice and mix again." },
+        { "order": 4, "description": "Pour the mixture into the pie crust." },
+        { "order": 5, "description": "Spread cherry jam on top." },
+        { "order": 6, "description": "Chill in the refrigerator." }
+      ]
+    },
+    {
+      "_id": 2,
+      "name": "Roasted Brussels Sprouts",
+      "description": "Oven-roasted Brussels sprouts with lemon and sesame",
+      "creatorId": 1,
+      "prepTimeMinutes": 10,
+      "cookTimeMinutes": 30,
+      "categories": ["Vegan", "Gluten-Free"],
+      "ingredients": [
+        { "ingredientId": 6, "name": "Brussels Sprouts", "quantity": null, "unit": null },
+        { "ingredientId": 10, "name": "Olive oil", "quantity": null, "unit": null },
+        { "ingredientId": 9, "name": "Salt", "quantity": null, "unit": null },
+        { "ingredientId": 8, "name": "Pepper", "quantity": null, "unit": null },
+        { "ingredientId": 7, "name": "Sesame seeds", "quantity": null, "unit": null },
+        { "ingredientId": 3, "name": "Lemon Juice", "quantity": null, "unit": null }
+      ],
+      "steps": [
+        { "order": 1, "description": "Preheat the oven." },
+        { "order": 2, "description": "Mix Brussels sprouts with olive oil, salt and pepper." },
+        { "order": 3, "description": "Spread on a baking tray." },
+        { "order": 4, "description": "Roast until golden." },
+        { "order": 5, "description": "Sprinkle with sesame seeds and lemon juice." }
+      ]
+    },
+    {
+      "_id": 3,
+      "name": "Mac & Cheese",
+      "description": "Classic macaroni and cheese",
+      "creatorId": 1,
+      "prepTimeMinutes": 15,
+      "cookTimeMinutes": 20,
+      "categories": ["Vegetarian"],
+      "ingredients": [
+        { "ingredientId": 11, "name": "Macaroni", "quantity": null, "unit": null },
+        { "ingredientId": 12, "name": "Butter", "quantity": null, "unit": null },
+        { "ingredientId": 13, "name": "Flour", "quantity": null, "unit": null },
+        { "ingredientId": 9, "name": "Salt", "quantity": null, "unit": null },
+        { "ingredientId": 8, "name": "Pepper", "quantity": null, "unit": null },
+        { "ingredientId": 14, "name": "Milk", "quantity": null, "unit": null },
+        { "ingredientId": 15, "name": "Shredded Cheddar cheese", "quantity": null, "unit": null }
+      ],
+      "steps": [
+        { "order": 1, "description": "Cook macaroni until al dente." },
+        { "order": 2, "description": "Melt butter in a pan." },
+        { "order": 3, "description": "Add flour, salt and pepper and mix." },
+        { "order": 4, "description": "Slowly add milk and whisk." },
+        { "order": 5, "description": "Cook until the sauce is thick." },
+        { "order": 6, "description": "Add shredded cheddar cheese and stir." },
+        { "order": 7, "description": "Combine the sauce with macaroni." }
+      ]
+    },
+    {
+      "_id": 4,
+      "name": "Tamagoyaki Japanese Omelette",
+      "description": "Japanese-style rolled omelette",
+      "creatorId": 1,
+      "prepTimeMinutes": 10,
+      "cookTimeMinutes": 10,
+      "categories": ["Vegetarian", "Japanese"],
+      "ingredients": [
+        { "ingredientId": 16, "name": "Eggs", "quantity": null, "unit": null },
+        { "ingredientId": 17, "name": "Soy sauce", "quantity": null, "unit": null },
+        { "ingredientId": 18, "name": "Sugar", "quantity": null, "unit": null },
+        { "ingredientId": 9, "name": "Salt", "quantity": null, "unit": null },
+        { "ingredientId": 10, "name": "Olive oil", "quantity": null, "unit": null }
+      ],
+      "steps": [
+        { "order": 1, "description": "Beat the eggs in a bowl." },
+        { "order": 2, "description": "Add soy sauce, sugar and salt." },
+        { "order": 3, "description": "Heat oil in a pan over medium heat." },
+        { "order": 4, "description": "Pour a thin layer of egg mixture into the pan." },
+        { "order": 5, "description": "Roll the omelette and push it to the side." },
+        { "order": 6, "description": "Repeat with the remaining egg mixture." }
+      ]
+    },
+    {
+      "_id": 5,
+      "name": "Vegetarian Potato Salad",
+      "description": "Simple potato salad, vegetarian and vegan",
+      "creatorId": 1,
+      "prepTimeMinutes": 15,
+      "cookTimeMinutes": 0,
+      "categories": ["Vegetarian", "Vegan", "Japanese"],
+      "ingredients": [
+        { "ingredientId": 19, "name": "Potato", "quantity": null, "unit": null },
+        { "ingredientId": 9, "name": "Salt", "quantity": null, "unit": null },
+        { "ingredientId": 8, "name": "Pepper", "quantity": null, "unit": null },
+        { "ingredientId": 10, "name": "Olive oil", "quantity": null, "unit": null }
+      ],
+      "steps": [
+        { "order": 1, "description": "Boil the potatoes until tender." },
+        { "order": 2, "description": "Let the potatoes cool slightly." },
+        { "order": 3, "description": "Cut the potatoes into pieces." },
+        { "order": 4, "description": "Season with salt, pepper and olive oil." }
+      ]
+    }
+  ]
+}
